@@ -1,0 +1,108 @@
+STEP 1:-
+
+abdelrahman210@pop-os:~$ mkdir "abdelrahman mohamed"
+abdelrahman210@pop-os:~$ ls
+'abdelrahman mohamed'   Documents   Music      Public      Videos
+ Desktop                Downloads   Pictures   Templates
+abdelrahman210@pop-os:~$ cd "abdelrahman mohamed"/
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd
+abdelrahman210@pop-os:~$ cd "abdelrahman mohamed"
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+
+
+STEP 2:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed$ mkdir "Documents." 
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd "Documents."
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ touch "file1.txt" "file2.txt" "file3.txt"
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ ls
+file1.txt  file2.txt  file3.txt
+
+
+STEP 3:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ cd ..
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+Documents.
+abdelrahman210@pop-os:~/abdelrahman mohamed$ touch ".hidden_file"
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls -a
+.  ..  Documents.  .hidden_file
+
+
+STEP 4 AND 5:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd "Documents."
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ ls
+file1.txt  file2.txt  file3.txt
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ nano "file1.txt" 
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ ls
+file1.txt  file2.txt  file3.txt
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ nano "file1.txt" 
+
+
+STEP 6:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ mkdir "-"
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ ls
+-  file1.txt  file2.txt  file3.txt
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ cd ./-
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents./-$ ls
+
+
+STEP 7:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents./-$ cd ..
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ cd ..
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cp -r "Documents." ~/abdelrahman\ mohamed/"My_docs"
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+Documents.  My_docs
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd My_docs/
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ ls
+-  file1.txt  file2.txt  file3.txt
+
+
+STEP 8:-(i typed alot because the task wasn't updated the moment i was typing)
+
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cp .hidden_file ~/abdelrahman\ mohamed/My_docs/
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+Documents.  My_docs
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls -a
+.  ..  Documents.  .hidden_file  My_docs
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd My_docs/
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ ls
+-  file1.txt  file2.txt  file3.txt
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ ls -a
+-  .  ..  file1.txt  file2.txt  file3.txt  .hidden_file
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ cat .hidden_file 
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ nano .hidden_file
+
+
+STEP 9:-
+
+abdelrahman210@pop-os:~/abdelrahman mohamed/My_docs$ cd ..
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+Documents.  My_docs
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd Documents.
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ mv file3.txt file2.txt "abdelrahman mohamed"
+mv: target 'abdelrahman mohamed' is not a directory
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ mv file3.txt file2.txt abdelrahman\ mohamed
+mv: target 'abdelrahman mohamed' is not a directory
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ mv file3.txt file2.txt ~/abdelrahman\ mohamed/
+abdelrahman210@pop-os:~/abdelrahman mohamed/Documents.$ cd ..
+abdelrahman210@pop-os:~/abdelrahman mohamed$ ls
+Documents.  file2.txt  file3.txt  My_docs
+
+
+STEP 10:
+
+abdelrahman210@pop-os:~/abdelrahman mohamed$ cd
+abdelrahman210@pop-os:~$ ls
+'abdelrahman mohamed'   Desktop   Documents   Downloads   Music   Pictures   Public   Templates   Videos
+abdelrahman210@pop-os:~$ rm -r abdelrahman\ mohamed
+abdelrahman210@pop-os:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+abdelrahman210@pop-os:~$
+
+
+
+					THANK YOU SO MUCH HOPE YOU LIKE IT ^^ <3
