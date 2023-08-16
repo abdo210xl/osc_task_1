@@ -1,0 +1,452 @@
+abdelrahman210@pop-os:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  test  Videos
+abdelrahman210@pop-os:~$ cd Downloads/
+abdelrahman210@pop-os:~/Downloads$ ls
+Updated-Task-02.zip
+abdelrahman210@pop-os:~/Downloads$ unzip Updated-Task-02.zip 
+Archive:  Updated-Task-02.zip
+   creating: Updated-Task-02/
+  inflating: Updated-Task-02/README.txt  
+  inflating: Updated-Task-02/.level-1.tar  
+abdelrahman210@pop-os:~/Downloads$ ls
+Updated-Task-02  Updated-Task-02.zip
+abdelrahman210@pop-os:~/Downloads$ cd Updated-Task-02
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ ls
+README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ cat README.txt 
+Locate what you can't see.
+Find out what to do with it.
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ ls -a
+.  ..  .level-1.tar  README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ tar -xf .level-1.tar 
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ ls
+README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ ls -a
+.  ..  .level-1  .level-1.tar  README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02$ cd .level-1
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls
+level-2  README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ cat README.txt 
+Decompress "level-2".
+Hint: Most compression tools require it's suffix.
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls -l
+total 16
+-rw-r--r-- 1 abdelrahman210 abdelrahman210 9813 Aug  9 17:59 level-2
+-rw-r--r-- 1 abdelrahman210 abdelrahman210   72 Aug  9 17:40 README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ unzip level-2 
+Archive:  level-2
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of level-2 or
+        level-2.zip, and cannot find level-2.ZIP, period.
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls -a
+.  ..  level-2  README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ tar -xf level-2 
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ ls
+level-2  README.txt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1$ cd level-2/
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ ls
+01VzXCtEZS  AVR4cOJJui  F7HxYNlWa1  kuDj7Ti4Id  pRQVevx1kv  vm5P2xLF3s
+09tuxAUkSZ  AXkzOy8ZzP  feBbPjPHsA  kVQzoTdmBO  PVhcqo825N  VMVoKBX4Qu
+0MaqBh51eE  b8L3KxPJL3  FKtcWd8ViA  L3QwW94Azo  Q6QURkVvYf  vOcM3EYMXw
+1Rc48mLISP  bc83b2Byu2  fky7p46DOi  l6FQ8rGXcW  QIGyaTtmlW  VUOJouKqL9
+1t7LeNZeIl  BeSbKu0Ogb  fSikeo7Jtz  l8fShvYkRA  QirM8dLKSD  VxWCuMyoCO
+2dBiyDY1PQ  BsdD4ojJkc  fTBdzWqgkc  lcVizkoO1R  Qv3QTzvZC1  w9ophYtx44
+2tqNyIRWZk  bvSabnQtuB  FUSxQX2TeD  lvEy6vrtZe  README.txt  waa5BUbYjL
+3aI6ZRWi7g  ciyaIBrj64  g18DV62wEd  LXdwN4DGye  rHC2JXoQSc  wfbzcLn49x
+3HClX3dFMm  clktsGviqW  gB9k1O4ZT6  lxQpP8fJrM  rjS1PORSqI  WU2NIZw5bL
+3nhuQzOgpI  CoXO2qfhv8  gBT5u0vLT5  mIQgRJXCLp  rn4s52kOCO  WWgF2QTu1U
+40Mg6vDbYN  cqxENw21F1  Gf0hDzawoe  mLD2604WjZ  rnTFX18Jh9  WxGYCzojb5
+4bq72IzcAj  cTJdoZGT00  Gi0sWVVQmE  mMwQyrbtaZ  rTAkta2aW2  WzkBDyZf09
+4CkUBprXze  cUJtGyfwcE  GqeOr84K6i  Mn1k5s3x2R  rzz4HDYtQb  x2OxGPBNwZ
+4OAvfgFenY  cuL74htcTP  gUm1Kw3MsJ  mTJFxGhibA  s82TBxnZgd  X7by8vw474
+4Qm9FLdd1E  cYLRnO8xIB  GuxvN3cJ7U  n80qgsvhlQ  SkWLO4DmJj  xiRKbhzAt6
+4TqWZorrCe  D240Im7S6f  H2TS1vp6Xt  n8QxXKvUat  soPx5vMfvS  Xnmws6DuHJ
+54is18fJ6D  dcWFp0gN0U  HC3gnSrNHL  n9Gy45gDYd  SpGacqvoQe  Y2WinDQzOb
+5CnJF4NcXe  dkbSpLYJE5  HDe7NHRINO  NABe6RrZS9  Sv7z35zbDG  y7U81AE7BP
+6jKgIUUWGx  DQ3kjLgCUV  HRHgAeIQKP  NB8PtjcBPu  T4TiKdPbRw  yc0GFVKDtL
+6LythIyWzQ  dW436qn2Pa  hsM9mQuMTH  NuvecJk6rH  tmDRcrdYa9  YH3RBGocdA
+6QcByCct9B  DWahK49MnT  hynub0MKNl  nV9Fht2ABW  TynxkdcmfZ  ymuoaRLefH
+7B5l8AC1M8  dwmlaLoghH  Ib1jBtgkP4  O0Jt20BDT8  u8APo7fuFv  yWegzIJdDb
+7dnQ0OZO7U  DYCdqY7wJN  iJfohlDIrt  o1hEPIsnq0  uCBBCPnmb2  yWY8iLmL2v
+7f6nrbSyXM  E0bi5j8X9V  IXzIL2c9IA  o5zluFzkcg  uH7zN1UJSF  Yx2PUbl2gA
+8HuZDGUf7D  EC1LKYOR0Z  jbZwCGWF1u  oATDmz0CAK  UkoXWlT8ck  ZDe6elrEn5
+8lNsncDmgT  ECIShbzsBE  jGu9MApzJB  OBfROJ7kKU  UkXg7Lp9iV  ZgiaL4uwSD
+a8wKwwWNRJ  EDPOSQuyWk  JiMEslX4PO  OEQ9RG7Cam  Uo2uLQHfWm  ZhfPkBCn6B
+ABtpOP8TR9  EJd4UALueA  JVucZ5s2sO  OlDXrxU8tn  URJcbPH7ig  zQ85ieoBzD
+AbyVd8kDq7  emEeo94yqd  jzjKDCAuJh  OQUNDxbuAf  uUeLfbjNyx  zTpHflQtBt
+aD09T4P1xb  eRz0wDJzB6  k0KGHDEFmp  P9w2t9K9Ju  UUrQyToe6M  ZwCSnEFDCS
+afHUHOaYAb  Etsj7NECd9  KNXMn8sBL8  PBQjGeeXZ2  uYt23HMkvu  zXOU7yVyjx
+AKf6S1hWVZ  eTY7qTsykD  KO4TANambB  PDsc45eDhU  v2LInrvkDO
+AofrZBGKhB  evJEy0ce9D  kPIkdmGR9B  po63smRLBt  v9kNm4bENt
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ find -iname level-3
+./gBT5u0vLT5/level-3
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2$ cd gBT5u0vLT5/
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ ls
+level-3
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ tar -xf level-3 
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ ls
+level-3
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ cd level-3/
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls
+00aBxtql7r  7PFGHcmfa2  cWRi45wacA  gupiPOsJzC  Kfce3CFjhh  O009zeKkif  RU4rJzjPfg  WLuasYnMvP
+0aba2tPi4R  7sxFwD2jGw  cWZv9iI87X  hb4zKjD5G4  KJBdbwTmzD  O0V7mQCicJ  RWWLnFwGtv  Wm14GdEGcm
+0QYBUNJixX  82aRYKaCZB  cX6YaqFDFY  hBv1LejGKu  kkIu8kVXLo  o6Q2i1NUXc  rwZwqdxHhJ  wpJyCPLODS
+17pfO4tY4m  88exEg2MMo  D5JYr3I592  Hf8ovJhWKI  kOIOppD8hx  OAbH1oFg57  rzSTDqa7oV  wpoGQ7WmSg
+1NBA3mJTQC  8IOqsSAWIo  dBJSXzmpb1  hGCeu2NgZ5  kp1ujuDGKO  OaRp7TV8pe  SaaZymLdoG  WSxUR7IJd8
+1pnvifRmA6  8OLXyd5ai0  Dd9KxIjxSB  HuSBc8QKYi  krWRFtvYDP  ObIefWWqqM  SaQtx8SNld  wZ4LJKpHW6
+22ix6enm8X  8u4f62oAYb  dK320XCmR0  HXq7gqQZ5Z  kT3eEAfVcY  OFx3U24MoP  sf7ajd5INC  x2CDPgz6Jk
+2GsF4Kn1PG  8X1ovlX6ex  DKiaUm3WBb  i4CkeVfT7S  kwmQK5z76U  OHWTswrtBk  skVRxkHK04  x3Nvoy3Ucl
+2IFaRh0Jxc  9CA6eRBprt  Doi1I9Z8TE  iCR4qC97HM  L5DOn3iY18  ojc7SuLzMV  sNrtW0eiZF  x3SkxfEItU
+30msooUqJf  9GqYmpQsAS  dqbKkDKbZl  IE4xWwbydi  L8ZzpZTLz5  orzpz7CBBQ  SqAZPx7CbA  X62Vq1yIyL
+3Ig28f7Xa8  9my7brVWmo  dtLZdglPV3  IiLRIuK1Fi  LeUtklcfmE  Ou1q6zOh5n  SRgPbWeEG6  X6lkChFKsj
+3SSDrwrwmt  9NNnGuH7A1  Dux6sHDdCW  IKeqpTmvmW  LKfMizQQjE  oV3aef60WL  sRhTcN4PIw  XapfbudtZp
+3TpnDd6PaY  9QBLcfEf91  EHm7bcCxj1  ioOe8b7TsJ  lowIuX2RQI  OXZ3OOGJ7O  sVyNLUXzut  xBsGYZHomA
+3wTdqmDig6  a6HPyy5Mz5  epBL6naqQR  iOplykVsBo  LtH4X99Uw3  oZ5HOQe6X0  T0gYx5T5ks  xigSiLU79u
+3XXNloi4gV  A8SqBitLRB  ePj0HMi3nh  ip23ESdwGT  LZ5jebusoa  p194n4sSpi  Tbi1MdwiMX  XkrAGaosYZ
+3YhvETOVcv  aFjSvqXqWE  Eqk382soFH  IygdcTaoYP  M1vV6QxnH1  p3ARvi0q4F  tEgA7tGwxB  xRxKkdCTU8
+4jFmUBgygR  AI8sfDgnhT  eT21MMr22o  iymCtoFUVf  m59pSiQG2p  p6PVEBfSyK  TezFlyJz9o  xYCpOSRLsl
+4vG2fYLy6B  AJtW9NcRLy  eT909HWyck  j3JsNAEsm1  m7lRDpRTUJ  PaOzJn0sJV  TFkiwAHDrG  xYlmccmE5f
+53IaK7n1np  ANRcGwDkvK  ETRyNzIpYk  J3K5BY52dp  MaqkHpS39h  PDJdFxfgvh  Tt0xmDrg4Y  Y0nB0Ep1my
+5H5OLdA8qE  ayHSb1kjNd  ev8BCScTMa  J5feTUwPso  MKQErXMkPE  penDnjNMQc  tZCE2HQg8s  y1IAp2YdZc
+5ME7YKcHsa  b4BF572o41  F5Db7l8s9j  jahdjqT54b  moQuVgMB1f  pH9s3o8foP  uAw4PKT7E0  Ye8R8ZOvJ9
+5tAchjHlmE  b957oPA24t  F9OYJjkGiB  JArjmQWPVq  mRET49bBGR  pI49N7Zoxn  udqz57oeuX  ygasPrK3kG
+5tJnO1Mwzf  Bb0kZiNxDz  fCLOGDR05y  JBDnoFKLcx  mu6c42Y1qo  Pmf5TqkkYg  ufdeX2Dk7C  YgeyHmPrtP
+5VoPA03kvi  BbreWoCXSv  Fdvgo1aqTT  JbMcWq9tku  mwILTjPhCP  pO4Lt5DPrX  v2ME2J4GuF  ysdoXYcYQq
+6AJpxbHYkm  bduLsR7v4K  FeBBLsJEYS  Jc0EEC4sua  mxG418at98  psmL4dk69Y  V64A9vKnYq  YVAPjrh8Up
+6C8RwQ9kGP  bOKXTvk63r  FJsgrBEwbJ  JgVwSWAUsr  mydABLXwyL  pXXxEWcKkz  vkaOISlk2I  zEmK04yIqc
+6hnWZbro0I  BrJvEu79eg  flbjrqIXMS  JlhNaDm4f7  n4d9SlSzcV  q4gh4nODZa  vLWtq7N2aR  ZenzUsQydR
+6JPHCI1K8M  BTf86zJsB3  fn95Z2sG3o  JnOT2WHKbE  n4MCXv5XM2  qFO0JDSF0N  VneCQhwmfv  zet1AFeHNl
+6lie6mPCRe  byVoAmiOqs  FYrh0rmC4q  jpO4wGMT57  N5lXyVotHN  Qh9GBAd3mF  vUbRKbYlKR  zghxQE4JGJ
+6mnK6keHIi  bze36b6xjZ  G9UhKYNLgv  JqAekDHYif  nBoQgGxoGX  QM053Y9Vw1  Vw5Jm3saUP  ZNq1fiVP6F
+6mpTfHgnlX  C5KrlOGYlu  GaMed1WIDN  jrMKucOmtp  NdkrRTZmr9  R0LpA1qK4F  vz1uLzTKjO  zTfi6AwgZQ
+6vigp6VM7d  cDfzzIGULi  gcb0bfLbVM  jVBkVAbTHj  NHag0dTW3U  R6okint5JZ  VZw2jtUdZD  zxmnKldpmY
+6ZJgIXN3P0  cF1AG2dtLr  gfLQDXjJAW  jVGv0HeZvG  nlgqxKuRC3  R82WkcyQAx  W6AdwbmalK  zzgiKI2xSS
+71qxiSKgAY  cjcKUQDGLl  Gksn5ca8Jn  jvyPQ8Z8ht  NLM96g2hH3  rcEkx0b0WC  WfUKyzFeEv  zZU6ymQky6
+74gKRNrKVf  cKiyNtE0yD  gOWuBZZgn2  JYdPDFpOIe  Nmuh6DvLkc  README.txt  WFyKhZdOcx
+77RwxhcZTx  ClbTpohwVU  GPaN65ikSl  k2yYJNQcLu  nR711EHtmU  rgNTkxVkxN  wgibrPHhJq
+7C4OyiuQc4  cStCLsSELl  gu78Zpnknw  K56S3V4AQ6  nSC9OkT1E3  RnL5L0QLbY  WhTtCYas3M
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls -li
+total 804
+451093 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 00aBxtql7r
+451266 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 0aba2tPi4R
+451280 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 0QYBUNJixX
+451345 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 17pfO4tY4m
+451057 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 1NBA3mJTQC
+451100 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 1pnvifRmA6
+451240 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 22ix6enm8X
+451040 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 2GsF4Kn1PG
+451324 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 2IFaRh0Jxc
+451335 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 30msooUqJf
+450967 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 3Ig28f7Xa8
+451269 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 3SSDrwrwmt
+451234 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 3TpnDd6PaY
+451334 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 3wTdqmDig6
+451054 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 3XXNloi4gV
+451348 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 3YhvETOVcv
+451294 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 4jFmUBgygR
+451021 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 4vG2fYLy6B
+451052 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 53IaK7n1np
+451342 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 5H5OLdA8qE
+451032 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 5ME7YKcHsa
+451260 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 5tAchjHlmE
+451044 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 5tJnO1Mwzf
+451338 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 5VoPA03kvi
+451041 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6AJpxbHYkm
+451258 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6C8RwQ9kGP
+451317 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6hnWZbro0I
+451244 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6JPHCI1K8M
+451237 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6lie6mPCRe
+451026 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 6mnK6keHIi
+451080 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6mpTfHgnlX
+451289 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6vigp6VM7d
+451000 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 6ZJgIXN3P0
+451282 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 71qxiSKgAY
+451270 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 74gKRNrKVf
+451031 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 77RwxhcZTx
+451082 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 7C4OyiuQc4
+451323 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 7nMGZvigiL
+450948 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 7PFGHcmfa2
+451018 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 7sxFwD2jGw
+450965 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 82aRYKaCZB
+451288 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 88exEg2MMo
+450974 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 8IOqsSAWIo
+451281 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 8OLXyd5ai0
+451255 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 8u4f62oAYb
+451036 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 8X1ovlX6ex
+450959 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 9CA6eRBprt
+451073 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 9GqYmpQsAS
+451346 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 9my7brVWmo
+451043 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 9NNnGuH7A1
+451042 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 9QBLcfEf91
+451056 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 a6HPyy5Mz5
+451344 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 A8SqBitLRB
+451072 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 aFjSvqXqWE
+451350 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 AI8sfDgnhT
+451275 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 AJtW9NcRLy
+451235 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 ANRcGwDkvK
+451353 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ayHSb1kjNd
+451325 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 b4BF572o41
+451307 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 b957oPA24t
+451079 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Bb0kZiNxDz
+451020 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 BbreWoCXSv
+451063 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 bduLsR7v4K
+451107 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 bOKXTvk63r
+451273 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 BrJvEu79eg
+451094 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 BTf86zJsB3
+451305 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 byVoAmiOqs
+451242 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 bze36b6xjZ
+451015 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 C5KrlOGYlu
+451236 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 cDfzzIGULi
+451013 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cF1AG2dtLr
+451352 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cjcKUQDGLl
+450962 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cKiyNtE0yD
+450953 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 ClbTpohwVU
+451030 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cStCLsSELl
+451027 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 ctnOoPIga1
+450955 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 cWRi45wacA
+451263 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cWZv9iI87X
+451097 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 cX6YaqFDFY
+451251 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 D5JYr3I592
+451299 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 dBJSXzmpb1
+451074 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Dd9KxIjxSB
+451111 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 dK320XCmR0
+451069 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 DKiaUm3WBb
+450972 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Doi1I9Z8TE
+451261 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 dqbKkDKbZl
+450997 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 dtLZdglPV3
+451250 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Dux6sHDdCW
+451068 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 EHm7bcCxj1
+451304 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 epBL6naqQR
+451279 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 ePj0HMi3nh
+450970 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Eqk382soFH
+451088 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 eT21MMr22o
+451247 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 eT909HWyck
+450985 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ETRyNzIpYk
+450966 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 ev8BCScTMa
+451231 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 F5Db7l8s9j
+451029 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 F9OYJjkGiB
+451109 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 fCLOGDR05y
+451060 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Fdvgo1aqTT
+450999 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 FeBBLsJEYS
+451014 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 FJsgrBEwbJ
+450979 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 flbjrqIXMS
+451330 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 fn95Z2sG3o
+451059 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 FYrh0rmC4q
+450990 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 G9UhKYNLgv
+451113 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 GaMed1WIDN
+451271 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 gcb0bfLbVM
+450956 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 gfLQDXjJAW
+451349 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 Gksn5ca8Jn
+451355 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 gOWuBZZgn2
+451278 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 GPaN65ikSl
+451007 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 gu78Zpnknw
+451340 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 gu92R3c92I
+451228 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 gupiPOsJzC
+451229 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 hb4zKjD5G4
+450988 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 hBv1LejGKu
+451033 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Hf8ovJhWKI
+451005 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 hGCeu2NgZ5
+451101 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 HuSBc8QKYi
+451295 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 HXq7gqQZ5Z
+450952 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 i4CkeVfT7S
+451256 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 iCR4qC97HM
+451089 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 IE4xWwbydi
+451290 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 IiLRIuK1Fi
+451058 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 IKeqpTmvmW
+451301 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ioOe8b7TsJ
+451277 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 iOplykVsBo
+451112 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ip23ESdwGT
+451034 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 IygdcTaoYP
+451011 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 iymCtoFUVf
+450982 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 j3JsNAEsm1
+451341 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 J3K5BY52dp
+451331 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 J5feTUwPso
+451262 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 jahdjqT54b
+451110 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 JArjmQWPVq
+451078 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 JBDnoFKLcx
+451062 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 JbMcWq9tku
+451004 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Jc0EEC4sua
+450977 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 JgVwSWAUsr
+451227 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 JlhNaDm4f7
+451238 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 JnOT2WHKbE
+451038 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 jpO4wGMT57
+451311 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 JqAekDHYif
+451016 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 jrMKucOmtp
+451267 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 jVBkVAbTHj
+450960 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 jVGv0HeZvG
+450983 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 jvyPQ8Z8ht
+451239 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 JYdPDFpOIe
+451003 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 k2yYJNQcLu
+451017 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 K56S3V4AQ6
+451245 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 K9kyHBbw7y
+451047 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 Kfce3CFjhh
+451314 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 KJBdbwTmzD
+450996 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 kkIu8kVXLo
+451246 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 kOIOppD8hx
+451095 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 kp1ujuDGKO
+451286 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 krWRFtvYDP
+451230 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 kT3eEAfVcY
+450984 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 kwmQK5z76U
+450987 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 L5DOn3iY18
+451243 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 L8ZzpZTLz5
+451319 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 LeUtklcfmE
+451291 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 LKfMizQQjE
+451254 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 lowIuX2RQI
+451337 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 LtH4X99Uw3
+450961 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 LZ5jebusoa
+451296 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 M1vV6QxnH1
+451009 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 m59pSiQG2p
+451115 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 m7lRDpRTUJ
+451272 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 MaqkHpS39h
+451322 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 MKQErXMkPE
+450975 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 moQuVgMB1f
+450958 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 mRET49bBGR
+451252 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 mu6c42Y1qo
+451310 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 mwILTjPhCP
+451287 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 mxG418at98
+451328 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 mydABLXwyL
+451098 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 n4d9SlSzcV
+451086 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 n4MCXv5XM2
+450949 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 N5lXyVotHN
+451312 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 nBoQgGxoGX
+450969 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 NdkrRTZmr9
+451061 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 NHag0dTW3U
+450980 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 nlgqxKuRC3
+451028 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 NLM96g2hH3
+451306 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 Nmuh6DvLkc
+451049 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 nR711EHtmU
+451046 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 nSC9OkT1E3
+451326 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 nwt49CVPtC
+451108 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 O009zeKkif
+451077 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 O0V7mQCicJ
+450964 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 o6Q2i1NUXc
+451070 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 OAbH1oFg57
+451232 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 OaRp7TV8pe
+450978 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ObIefWWqqM
+450954 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 OFx3U24MoP
+450950 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 OHWTswrtBk
+450968 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ojc7SuLzMV
+451104 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 orzpz7CBBQ
+451002 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Ou1q6zOh5n
+451066 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 oV3aef60WL
+451257 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 OXZ3OOGJ7O
+451298 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 oZ5HOQe6X0
+451090 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 p194n4sSpi
+451071 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 p3ARvi0q4F
+450971 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 p6PVEBfSyK
+451092 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 PaOzJn0sJV
+451053 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 PDJdFxfgvh
+451048 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 penDnjNMQc
+451103 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 pH9s3o8foP
+451233 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 pI49N7Zoxn
+451096 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Pmf5TqkkYg
+451055 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 pO4Lt5DPrX
+450993 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 psmL4dk69Y
+451327 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 pXXxEWcKkz
+450976 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 q4gh4nODZa
+451024 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 qFO0JDSF0N
+450991 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Qh9GBAd3mF
+451321 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 QM053Y9Vw1
+451064 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 R0LpA1qK4F
+451284 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 R6okint5JZ
+451083 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 R82WkcyQAx
+451081 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 rcEkx0b0WC
+450994 -rw-r--r-- 1 abdelrahman210 abdelrahman210   75 Aug  9 17:35 README.txt
+451010 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 rgNTkxVkxN
+451253 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 RnL5L0QLbY
+451259 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 RPZAvV75tm
+451248 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 RU4rJzjPfg
+451268 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 RWWLnFwGtv
+451302 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 rwZwqdxHhJ
+451320 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 rzSTDqa7oV
+451264 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 SaaZymLdoG
+450998 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 SaQtx8SNld
+451022 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 sf7ajd5INC
+451226 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 skVRxkHK04
+450823 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 sNrtW0eiZF
+450986 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 SqAZPx7CbA
+451067 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 SRgPbWeEG6
+451106 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 sRhTcN4PIw
+451023 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 sVyNLUXzut
+451241 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 T0gYx5T5ks
+451333 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 Tbi1MdwiMX
+451084 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 tEgA7tGwxB
+451012 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 TezFlyJz9o
+451318 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 TFkiwAHDrG
+451050 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Tt0xmDrg4Y
+451065 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 tZCE2HQg8s
+451099 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 uAw4PKT7E0
+451265 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 udqz57oeuX
+451008 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ufdeX2Dk7C
+451045 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 v2ME2J4GuF
+451076 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 V64A9vKnYq
+451356 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 vkaOISlk2I
+450995 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 vLWtq7N2aR
+451249 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 VneCQhwmfv
+451313 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 vUbRKbYlKR
+451025 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Vw5Jm3saUP
+450963 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 vz1uLzTKjO
+451300 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 VZw2jtUdZD
+450981 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 W6AdwbmalK
+450989 -rw-r--r-- 1 abdelrahman210 abdelrahman210   34 Aug  9 17:35 WfUKyzFeEv
+451019 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 WFyKhZdOcx
+451085 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 wgibrPHhJq
+451283 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 WhTtCYas3M
+451303 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 wJC19bchr2
+451351 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 WLuasYnMvP
+451297 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Wm14GdEGcm
+451276 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 wpJyCPLODS
+451001 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 wpoGQ7WmSg
+451075 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 WSxUR7IJd8
+451114 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 wZ4LJKpHW6
+451285 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 x2CDPgz6Jk
+451006 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 x3Nvoy3Ucl
+451292 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 x3SkxfEItU
+451332 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 X62Vq1yIyL
+450973 lrwxrwxrwx 1 abdelrahman210 abdelrahman210   10 Aug  9 17:35 X6lkChFKsj -> WfUKyzFeEv
+451037 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 XapfbudtZp
+451039 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 xBsGYZHomA
+451316 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 xigSiLU79u
+450951 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 XkrAGaosYZ
+451329 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 xRxKkdCTU8
+451309 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 xYCpOSRLsl
+450957 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 xYlmccmE5f
+450992 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 Y0nB0Ep1my
+451347 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 y1IAp2YdZc
+451308 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 Ye8R8ZOvJ9
+451343 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ygasPrK3kG
+451293 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 YgeyHmPrtP
+451102 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ysdoXYcYQq
+451336 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 YVAPjrh8Up
+451105 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zEmK04yIqc
+451274 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ZenzUsQydR
+451035 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zet1AFeHNl
+451051 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zghxQE4JGJ
+451354 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 ZNq1fiVP6F
+451339 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zTfi6AwgZQ
+451315 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zxmnKldpmY
+451091 drwxr-xr-x 2 abdelrahman210 abdelrahman210 4096 Aug  9 17:35 zzgiKI2xSS
+451087 -rw-r--r-- 1 abdelrahman210 abdelrahman210    0 Aug  9 17:35 zZU6ymQky6
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cat WfUKyzFeEv 
+73 bytes is your target file size
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ find -size 73c
+./m7lRDpRTUJ/xVMvVOKNW5
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cd m7lRDpRTUJ/
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ ls
+1204O0idSW  a6KN771BPV  EAWdAFGbxf  iCpJ8wBQq2  mn3e6Ukeu5  PmB4iJFTFB  SIiBVT5XpG  Uw0gGZm5YB  xVMvVOKNW5
+1bCCZRGCP3  AlQLa7wIM8  ECBxKuouhR  iDt7gCIQOV  MOyiOWLVjV  PMp0lDQTYx  ssa1bacp3F  uXSht4UWOr  ybI2S3pZFm
+1tLJoXdFEx  ApKtojXYfl  ETzNsIhFSh  IkD0Kc93ts  mTwkfDKUxV  PWLFYrquMP  svoTVwu3Gh  vd9wQvpzfs  ymqTENE3jY
+2WF03Yxdgm  apvmVmfiQP  f2eGz5NKur  IVmfWnZKGu  n0WG0kEz4U  QOW3NTbKjY  SXfN5VyJC1  VfkLDe3f33  yUrN6JREYC
+3YM1EHLZON  b4bMOBravk  FjhvGNg8Rw  IZKBNTU02o  N1fQlnGzCp  RaXvrEJu4H  TdfHEaeirn  vjhekqgloC  ZbG73LAmPB
+4RHGy6IOSt  BdHMXUF3Kz  GAVRSOhw50  J18pIlZSbj  N7xJzk6WzX  rEbxPsvJxP  tIMSWkYsun  vRbJN3oCei  ZPjJENA107
+5UoS4swAbG  Binpmv9laL  H0As0BrH5Y  j7QpDNmBD7  nbkg0Tbooi  rEgcbMGD1X  tiStWqDaVb  WAPVSLBGJp
+60SWKf61He  C3ZCLEZzrq  HdCe5ZBwRJ  JE6hnwqIgj  nlc56s7edL  rGhJCRs7FJ  tntCZ8u1xi  Wkh2swDjL7
+6m74yd7cI9  cmlc365V3X  HHJQG3WBVK  K8QCoBIctX  nNDDzbFDgI  RTZ0Q5Fvz7  TomKpe0mD0  wTiXKTqwfC
+71dGwY7RAS  CZvLOVIhO7  HM1rw0RpJv  knoHOHY78g  OAHiGcx0jY  rvcjXWFVMX  tx4RZgKOLD  x0tflVoEoO
+74nsBmhMC3  D5g23jQPVs  HqTpd7tcQ2  lvwScjhd7D  oLeRCAOaT4  saw1DFRZUf  TylxxsM72k  x9CSQNEVjE
+abdelrahman210@pop-os:~/Downloads/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ cat xVMvVOKNW5 
+Congrats!! You have finished the Task Successfully, you can rest now :D.
+
