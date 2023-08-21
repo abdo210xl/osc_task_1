@@ -1,0 +1,114 @@
+STEP 1:-
+
+abdelrahman210@pop-os:~$ sudo adduser osc
+Adding user `osc' ...
+Adding new group `osc' (1001) ...
+Adding new user osc' (1001) with group osc' ...
+Creating home directory `/home/osc' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+No password has been supplied.
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for osc
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+abdelrahman210@pop-os:~$ sudo passwd osc
+New password: 
+Retype new password: 
+passwd: password updated successfully
+abdelrahman210@pop-os:~$ sudo groupadd osc_group
+abdelrahman210@pop-os:~$ sudo usermod -aG osc_group osc
+abdelrahman210@pop-os:~$ sudo usermod -aG sudo osc
+abdelrahman210@pop-os:~$ su - osc
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+
+STEP 2:-
+
+osc@pop-os:~$ mkdir permission_practice
+osc@pop-os:~/permission_practice$ touch public_file.txt private_file.txt executable_script.sh
+osc@pop-os:~/permission_practice$ ls
+executable_script.sh  private_file.txt  public_file.txt
+osc@pop-os:~/permission_practice$ chmod a+rw- public_file.txt 
+osc@pop-os:~/permission_practice$ chmod u+rw- private_file.txt 
+osc@pop-os:~/permission_practice$ chmod u+rwx executable_script.sh 
+osc@pop-os:~/permission_practice$ chmod g+r-x executable_script.sh 
+
+
+STEP 3:-
+
+osc@pop-os:~/permission_practice$ sudo chown abdelrahman210 private_file.txt 
+[sudo] password for osc: 
+osc@pop-os:~/permission_practice$ sudo chgrp osc_group private_file.txt 
+osc@pop-os:~/permission_practice$ ls -l
+total 0
+-rwxrw-r-- 1 osc            osc       0 Aug 15 22:36 executable_script.sh
+-rw-rw-r-- 1 abdelrahman210 osc_group 0 Aug 15 22:36 private_file.txt
+-rw-rw-rw- 1 osc            osc       0 Aug 15 22:36 public_file.txt
+
+
+STEP 4:-
+
+osc@pop-os:~/permission_practice$ sleep 1000 &
+[1] 10199
+osc@pop-os:~/permission_practice$ kill 10199
+osc@pop-os:~/permission_practice$ vim
+[1]   Terminated              sleep 1000
+
+[2]+  Stopped                 vim
+osc@pop-os:~/permission_practice$ killall vim
+osc@pop-os:~/permission_practice$ ps
+    PID TTY          TIME CMD
+   9442 pts/0    00:00:00 bash
+  10201 pts/0    00:00:00 vim
+  10205 pts/0    00:00:00 ps
+osc@pop-os:~/permission_practice$ pkill vim
+osc@pop-os:~/permission_practice$ ps
+    PID TTY          TIME CMD
+   9442 pts/0    00:00:00 bash
+  10201 pts/0    00:00:00 vim
+  10207 pts/0    00:00:00 ps
+osc@pop-os:~/permission_practice$ pkill -9 vim
+osc@pop-os:~/permission_practice$ ps
+    PID TTY          TIME CMD
+   9442 pts/0    00:00:00 bash
+  10210 pts/0    00:00:00 ps
+[2]+  Killed                  vim
+
+
+STEP 5:-
+
+osc@pop-os:~/permission_practice$ sudo apt install neofetch
+[sudo] password for osc: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+.....(alot of lines showed after that)
+
+osc@pop-os:~/permission_practice$ sudo apt remove neofetch
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  caca-utils chafa jp2a libchafa0 toilet toilet-fonts
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  neofetch
+  ..........(also alot of lines showed after that)
+
+
+
+                                                THANK YOU HOPE YOU ACCEPT IT ^^ <3
+
+
+                                                  
